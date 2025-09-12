@@ -10,8 +10,8 @@ pymongo==4.8.0      # Includes GridFS
 motor==3.5.0        # Async MongoDB driver
 
 # Deep Learning / YOLO
-torch==2.3.1
-torchvision==0.18.1
+torch==2.5.0
+torchvision==0.20.0
 ultralytics==8.2.50
 
 # Image / Video processing
