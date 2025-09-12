@@ -1,3 +1,32 @@
+# Upgrade pip first (Render usually does this)
+pip>=25.2
+
+# FastAPI + server
+fastapi==0.111.0
+uvicorn[standard]==0.30.0
+
+# Database
+pymongo==4.8.0      # Includes GridFS
+motor==3.5.0        # Async MongoDB driver
+
+# Deep Learning / YOLO
+torch==2.5.0
+torchvision==0.21.0
+ultralytics==8.2.50
+
+# Image / Video processing
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+pillow==10.3.0
+
+# Utilities
+python-multipart==0.0.9
+pydantic==2.8.2
+sqlalchemy==2.0.31
+
+# Optional: For charts, analytics, etc.
+matplotlib==3.9.1
+pandas==2.2.2
 # Upgrade pip first (so you don’t get warnings)
 pip>=25.2
 
@@ -27,3 +56,4 @@ sqlalchemy==2.0.31
 # Optional: For charts, analytics, etc.
 matplotlib==3.9.1
 pandas==2.2.2
+
