@@ -1,38 +1,26 @@
-# Base setup
-pip==25.2
-setuptools>=65.5.0
-wheel
+# Core framework
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
 
-# Web framework
-fastapi==0.110.0
-uvicorn[standard]==0.27.1
-pydantic==2.6.3
-pydantic-settings==2.2.1
-python-multipart==0.0.9
-python-dotenv==1.0.1
-pymongo==4.6.2
-SQLAlchemy==2.0.29
+# Database (MongoDB)
+pymongo==4.8.0
+motor==3.5.1
+gridfs==4.8.0
 
-# ML / AI
+# ML / AI (YOLOv8 + PyTorch)
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+ultralytics==8.2.50
+
+# Data handling
 numpy==1.26.4
 pandas==2.2.2
+
+# Image/Video processing
 opencv-python-headless==4.9.0.80
-torch==2.2.0
-torchvision==0.17.0
-ultralytics==8.1.30
-thop==0.1.1.post2209072238
-scikit-learn==1.4.1
-scipy==1.12.0
+Pillow==10.3.0
 
-# Utils
-tqdm==4.66.2
-requests==2.31.0
-python-jose==3.3.0
-passlib==1.7.4
-bcrypt==4.0.1
-
-# Optional visualization
-matplotlib==3.8.3
-seaborn==0.13.2
-
-
+# Utilities
+python-multipart==0.0.9
+pydantic==2.7.1
