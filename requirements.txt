@@ -1,26 +1,29 @@
-# Core framework
+# Upgrade pip first (so you don’t get warnings)
+pip>=25.2
+
+# FastAPI + server
 fastapi==0.111.0
-uvicorn[standard]==0.30.1
+uvicorn[standard]==0.30.0
 
-# Database (MongoDB)
-pymongo==4.8.0
-motor==3.5.1
+# Database
+pymongo==4.8.0      # Includes GridFS
+motor==3.5.0        # Async MongoDB driver
 
-# ML / AI (YOLOv8 + PyTorch)
-torch==2.2.2
-torchvision==0.17.2
-torchaudio==2.2.2
+# Deep Learning / YOLO
+torch==2.3.1
+torchvision==0.18.1
 ultralytics==8.2.50
 
-# Data handling
+# Image / Video processing
+opencv-python-headless==4.10.0.84
 numpy==1.26.4
-pandas==2.2.2
-
-# Image/Video processing
-opencv-python-headless==4.9.0.80
-Pillow==10.3.0
+pillow==10.3.0
 
 # Utilities
 python-multipart==0.0.9
-pydantic==2.7.1
+pydantic==2.8.2
+sqlalchemy==2.0.31
 
+# Optional: For charts, analytics, etc.
+matplotlib==3.9.1
+pandas==2.2.2
